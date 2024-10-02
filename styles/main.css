@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.top-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #27210C;
+    height: 11vh;
+}
+
+.top-img {
+    height: 100%;
+}
+
+.general-info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-color: #000000;
+    overflow: hidden;
+}
+
+.half-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.half-container img {
+    transition: transform ease-in-out 0.3s;
+}
+
+.half-container:hover img {
+    transform: scale(1.1);
+}
+
+.half-img {
+    width: 100%;
+    object-fit:contain;
+    display: block;
+    opacity: 0.3;
+    position: absolute;
+    z-index: 1;
+}
+.specific-logo {
+    width: 50%;
+    object-fit: contain;
+    display: block;
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.hover-item {
+    transition: transform ease-in-out 0.3s;
+}
+
+.hover-item:hover {
+    transform: scale(1.1);
+}
+
+.quienes-somos-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000000;
+    position: relative;
+    overflow: hidden;
+}
+
+.quienes-somos-container img {
+    width: 100%;
+    object-fit: contain;
+    display: block;
+    opacity: 0.3;
+    position: absolute;
+    z-index: 0;
+}
+
+.quienes-somos-wrapper {
+    width: 100%;
+    height: 100%;
+    margin-top: 150px;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 150px;
+}
+
+.quienes-somos-title {
+    color: #E8D3AE;
+    font-size: 3rem;
+}
+
+.quienes-somos-text {
+    color: #D9BA7D;
+    width: 80%;
+    text-align: justify;
+}
+
+.fade {
+    height: 70px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background: linear-gradient(to bottom, black, transparent);
+    z-index: 2;
+}
+
+.fade-reverse {
+    height: 70px;
+    width: 100%;
+    position: absolute;
+    bottom: -10px;
+    background: linear-gradient(to top, black, transparent);
+    z-index: 2;
+}
+
+
