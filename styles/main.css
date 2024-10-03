@@ -1,7 +1,14 @@
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../assets/fonts/Montserrat-VariableFont_wght.ttf") format('truetype');
+}
+
+
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Montserrat", sans-serif;
     box-sizing: border-box;
 }
 
@@ -57,7 +64,8 @@ body {
 
 .half-img {
     width: 100%;
-    object-fit:contain;
+    height: 100%;
+    object-fit: cover;
     display: block;
     opacity: 0.3;
     position: absolute;
@@ -92,7 +100,8 @@ body {
 
 .quienes-somos-container img {
     width: 100%;
-    object-fit: contain;
+    height: 100%;
+    object-fit: cover;
     display: block;
     opacity: 0.3;
     position: absolute;
@@ -111,11 +120,13 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
     gap: 150px;
+    overflow-x: scroll;
 }
 
 .quienes-somos-title {
     color: #E8D3AE;
     font-size: 3rem;
+    text-align: center;
 }
 
 .quienes-somos-text {
@@ -140,6 +151,27 @@ body {
     bottom: -10px;
     background: linear-gradient(to top, black, transparent);
     z-index: 2;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .general-info-container {
+        flex-direction: column;
+    }
+
+    .half-container {
+        width: 100%;
+        height: 50%;
+    }
+
+    .quienes-somos-wrapper {
+        margin-top: 50px;
+        gap: 50px;
+    }
+
+    .quienes-somos-text {
+        width: 95%;
+    }
 }
 
 

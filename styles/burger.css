@@ -1,0 +1,154 @@
+
+body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: black;
+}
+.background-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    opacity: 0.1;
+    position: absolute;
+    z-index: 1;
+}
+
+.back-arrow {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #E8D3AE;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 3;
+    transition: transform ease-in-out 0.3s;
+}
+
+.back-arrow:hover {
+    color: white;
+    transform: scale(1.1);
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+
+@media only screen and (min-width: 800px) {
+    .main-container {
+        height: 100vh;
+    }
+}
+
+.logo-img {
+    width: 250px;
+    margin-top: 50px;
+}
+
+.burger-title {
+    color: #E8D3AE;
+    text-align: center;
+}
+
+.burger-text {
+    color: #D9BA7D;
+    width: 80%;
+    text-align: center;
+}
+
+.boton-carta {
+    background-color: #27210C;
+    color: #E8D3AE;
+    padding: 10px 20px;
+    width: 35%;
+    border-radius: 10px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+.boton-carta:hover {
+    background-color: #E8D3AE;
+    color: #27210C;
+}
+
+/* CAROUSEL */
+.wrapper-carousel {
+    max-width: 1200px;
+    position: relative;
+  }
+  
+  .wrapper-carousel i {
+    width: 46px;
+    height: 46px;
+    text-align: center;
+    line-height: 46px;
+    background: white;
+    border-radius: 50%;
+    color: black;
+    cursor: pointer;
+    font-size: 1.2rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .wrapper-carousel i:first-child{
+    left: -23px;
+  }
+  
+  .wrapper-carousel i:last-child{
+    right: -23px;
+  }
+  
+  .wrapper-carousel .carousel {
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 0px;
+    cursor: pointer;
+    scroll-behavior: smooth;
+  }
+  
+  .carousel.dragging{
+    cursor: grab;
+    scroll-behavior: auto;
+  }
+  
+  .carousel.dragging img {
+    pointer-events: none;
+  }
+  
+  .carousel img {
+    margin-left: 14px;
+    height: 200px;
+    object-fit: cover;
+    width: calc(100% / 3);
+  }
+  .carousel img:first-child{
+    margin-left: 0px;
+  }
+
+  @media only screen and (max-width: 800px) {
+    .carousel img {
+        width: 100%;
+    }
+
+    .wrapper-carousel {
+        max-width: 90%;
+    }
+
+    .wrapper-carousel i {
+        background: transparent;
+        color: white;
+    }
+}
