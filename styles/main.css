@@ -133,6 +133,17 @@ body {
     color: #D9BA7D;
     width: 80%;
     text-align: justify;
+    font-size: 1.5rem;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.quienes-somos-text p {
+    flex: 1 1 100%;
 }
 
 .fade {
@@ -153,6 +164,36 @@ body {
     z-index: 2;
 }
 
+.bottom-div {
+    background-color: #27210C;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.bottom-div img {
+    width: 250px;
+    height: 250px;
+}
+
+.bottom-div p {
+    color: #E8D3AE;
+    font-size: 0.8rem;
+}
+
+.contacto {
+    display: flex;
+    row-gap: 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 @media only screen and (max-width: 1000px) {
 
     .general-info-container {
@@ -171,6 +212,11 @@ body {
 
     .quienes-somos-text {
         width: 95%;
+        font-size: 1rem;
+    }
+
+    .bottom-div {
+        flex-direction: column;
     }
 }
 
