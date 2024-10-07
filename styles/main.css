@@ -183,6 +183,7 @@ body {
 .bottom-div p {
     color: #E8D3AE;
     font-size: 0.8rem;
+    text-decoration: none;
 }
 
 .contacto {
@@ -198,6 +199,10 @@ body {
 
     .general-info-container {
         flex-direction: column;
+    }
+
+    .fade-reverse {
+        display: none;
     }
 
     .half-container {
