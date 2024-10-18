@@ -201,6 +201,10 @@ body {
     height: 250px;
 }
 
+p {
+    text-decoration: none;
+}
+
 .bottom-div p {
     color: #E8D3AE;
     font-size: 0.8rem;
