@@ -9,14 +9,3 @@ function goBurger() {
 function goBrunch() {
   document.location.href = "kanalla-brunch.html";
 }
-
-window.onload = function() {
-  if (document.location.href.includes("kanalla-burger") && new Date().getDay() <= 22) {
-    document.getElementsByClassName("popup")[0].style.opacity = 100;
-  }
-}
-
-function closePopup() {
-  document.getElementsByClassName("popup")[0].style.opacity = 0;
-  document.getElementsByClassName("popup")[0].style.display = "none";
-}
